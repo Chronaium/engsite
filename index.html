@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
   <title>GBBT - Homepage</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -224,7 +223,7 @@
     <div class="col-sm-8">
       <h2>About Company Page:</h2><br>
       <h4>Tdadwwadawdwad.</h4>
-      <br><button class="btn btn-default btn-lg">Get in Touch</button>
+      <br><a href="#contact" class="btn btn-default btn-lg">Get in Touch</a>
     </div>
     <div class="col-sm-4">
       <img src="http://www.ukstudentlife.com/Travel/Tours/Company/TheOriginalTour/Logo2.jpg" class="img-thumbnail">
@@ -305,8 +304,8 @@
           <p><strong>9</strong> Activities</p>
         </div>
         <div class="panel-footer">
-          <h3>X</h3>
-          <button class="btn btn-lg">Sign Up</button>
+          <h3>$1000</h3>
+          <button class="btn btn-lg disabled">Sign Up</button>
         </div>
       </div>
     </div>
@@ -322,8 +321,8 @@
           <p><strong>9</strong> Activities</p>
         </div>
         <div class="panel-footer">
-          <h3>X</h3>
-          <button class="btn btn-lg">Sign Up</button>
+          <h3>$1000</h3>
+          <button class="btn btn-lg disabled">Sign Up</button>
         </div>
       </div>
     </div>
@@ -339,8 +338,8 @@
           <p><strong>9</strong> Activities</p>
         </div>
         <div class="panel-footer">
-          <h3>X</h3>
-          <button class="btn btn-lg">Sign Up</button>
+          <h3>$1000</h3>
+          <button class="btn btn-lg disabled">Sign Up</button>
         </div>
       </div>
     </div>
@@ -348,14 +347,14 @@
 </div>
 
 <!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid bg-grey">
+<div id="contact" class="container-fluid">
   <h2 class="text-center">CONTACT:</h2>
   <div class="row">
     <div class="col-sm-5">
-      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p>Contact us and we'll get back to you within a day.</p>
       <p><span class="glyphicon glyphicon-map-marker"></span> London, UK</p>
       <p><span class="glyphicon glyphicon-phone"></span> +44 12345678</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> contact@gbbt.com</p>
     </div>
     <div class="col-sm-7 slideanim">
       <div class="row">
@@ -369,42 +368,14 @@
       <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
       <div class="row">
         <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
+          <button class="btn btn-default pull-right disabled" type="submit">Send</button>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<div id="googleMap" style="height:400px;width:100%;"></div>
-
-<!-- Add Google Maps -->
-<script src="https://maps.googleapis.com/maps/api/js"></script>
-<script>
-var myCenter = new google.maps.LatLng(41.878114, -87.629798);
-
-function initialize() {
-var mapProp = {
-  center:myCenter,
-  zoom:12,
-  scrollwheel:false,
-  draggable:false,
-  mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-var marker = new google.maps.Marker({
-  position:myCenter,
-  });
-
-marker.setMap(map);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
-
-<footer class="container-fluid text-center">
+<footer class="container-fluid text-center bg-grey">
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
